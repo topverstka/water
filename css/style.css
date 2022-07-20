@@ -775,7 +775,7 @@ body._lock {
 }
 @media (max-width: 1023px) {
   .plug__bg {
-    background-image: radial-gradient(circle at left top, #192630, transparent 50%), radial-gradient(circle at right bottom, #211427, transparent 50%);
+    background-image: radial-gradient(circle at left top, #192630, transparent 50%), radial-gradient(circle at right bottom, #211427, transparent 65%);
   }
 }
 
