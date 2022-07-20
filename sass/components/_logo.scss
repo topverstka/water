@@ -1,0 +1,13 @@
+.logo {
+
+}
+
+.logo__img {
+    width: 69px;
+    height: 63px;
+
+    @media (max-width: $tablet) {
+        width: 39px;
+        height: 36px;
+    }
+}

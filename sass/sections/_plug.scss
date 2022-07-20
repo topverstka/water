@@ -1,0 +1,123 @@
+.plug {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.plug__content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.plug__logo {
+    display: inline-block;
+    margin-bottom: 90px;
+
+    @media (max-width: $tablet) {
+        margin-bottom: 120px;
+        width: 39px;
+        height: 36px;
+    }
+}
+
+.plug__subtitle {
+    margin-bottom: 60px;
+    font-size: 30px;
+    line-height: 26px;
+    letter-spacing: 0.3em;
+
+    @media (max-width: $laptop-m) {
+        font-size: 26px;
+    }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 40px;
+        font-size: 12px;
+        line-height: 12px;
+    }
+}
+
+.plug__title {
+    margin-bottom: 40px;
+    font-size: 88px;
+    line-height: 78px;
+    letter-spacing: 0.3em;
+
+    @media (max-width: $laptop-m) {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    @media (max-width: $mobile-m) {
+        font-size: 22px;
+        line-height: 22px;
+    }
+}
+
+.plug__pictures {
+    position: relative;
+    margin-top: auto;
+    text-align: center;
+}
+
+.plug__picture-bg {
+
+}
+
+.plug__picture-bg-img {
+    position: absolute;
+    top: -62%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+
+    @media (max-width: $laptop) {
+        top: -35%;
+        width: 140%;
+    }
+}
+
+.plug__picture {
+    position: relative;
+}
+
+.plug__picture-img {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    transform: translateX(15px);
+
+    @media (max-width: $laptop) {
+        width: 50%;
+    }
+}
+
+.plug__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at left center, #192630, transparent 50%),
+        radial-gradient(circle at right bottom, #211427, transparent 50%);
+    opacity: .74;
+
+    @media (max-width: $laptop) {
+        background-image:
+            radial-gradient(circle at left top, #192630, transparent 50%),
+            radial-gradient(circle at right bottom, #211427, transparent 50%);
+    }
+}
