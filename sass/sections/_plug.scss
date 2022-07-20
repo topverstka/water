@@ -156,10 +156,28 @@
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-image:
-        radial-gradient(circle at left center, #192630, transparent 50%),
-        radial-gradient(circle at right bottom, #211427, transparent 50%);
     opacity: .74;
+
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &::before {
+        background-image: radial-gradient(circle at left center, #192630, transparent 50%);
+        animation: blink 4s alternate infinite;
+    }
+
+    &::after {
+        background-image: radial-gradient(circle at right bottom, #211427, transparent 50%);
+        animation: blink-reverse 4s alternate infinite ;
+    }
 
     @media (max-width: $laptop) {
         background-image:
@@ -190,4 +208,20 @@
     }
 }
 
-// @keyframes wing-right {
+@keyframes blink {
+    from {
+        opacity: .6;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes blink-reverse {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: .4;
+    }
+}
