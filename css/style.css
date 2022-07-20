@@ -814,8 +814,23 @@ body._lock {
   z-index: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle at left center, #192630, transparent 50%), radial-gradient(circle at right bottom, #211427, transparent 50%);
   opacity: 0.74;
+}
+.plug__bg::before, .plug__bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.plug__bg::before {
+  background-image: radial-gradient(circle at left center, #192630, transparent 50%);
+  animation: blink 4s alternate infinite;
+}
+.plug__bg::after {
+  background-image: radial-gradient(circle at right bottom, #211427, transparent 50%);
+  animation: blink-reverse 4s alternate infinite;
 }
 @media (max-width: 1023px) {
   .plug__bg {
@@ -841,6 +856,22 @@ body._lock {
   to {
     transform: rotate(0) translateY(0);
     opacity: 1;
+  }
+}
+@keyframes blink {
+  from {
+    opacity: 0.6;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes blink-reverse {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.4;
   }
 }
 [data-aos][data-aos][data-aos-duration="50"], body[data-aos-duration="50"] [data-aos] {
