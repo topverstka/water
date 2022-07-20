@@ -754,7 +754,7 @@ body._lock {
   right: 0;
   width: auto;
   height: auto;
-  animation: wing-left 0.4s 0.8s both;
+  animation: wing-left 1s 0.8s both;
 }
 @media (max-width: 767px) {
   .plug__wing-left-picture-img {
@@ -776,7 +776,7 @@ body._lock {
   left: 0;
   width: auto;
   height: auto;
-  animation: wing-right 0.4s 0.8s both;
+  animation: wing-right 1s 0.8s both;
 }
 @media (max-width: 767px) {
   .plug__wing-right-picture-img {

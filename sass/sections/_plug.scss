@@ -100,7 +100,7 @@
     right: 0;
     width: auto;
     height: auto;
-    animation: wing-left .4s .8s both;
+    animation: wing-left 1s .8s both;
 
     @media (max-width: $tablet) {
         bottom: 40%;
@@ -121,7 +121,7 @@
     left: 0;
     width: auto;
     height: auto;
-    animation: wing-right .4s .8s both;
+    animation: wing-right 1s .8s both;
 
     @media (max-width: $tablet) {
         bottom: 40%;
@@ -189,3 +189,5 @@
         opacity: 1;
     }
 }
+
+// @keyframes wing-right {
