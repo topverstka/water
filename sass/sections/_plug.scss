@@ -18,7 +18,7 @@
     margin-bottom: 90px;
 
     @media (max-width: $tablet) {
-        margin-bottom: 120px;
+        margin-bottom: 45px;
         width: 39px;
         height: 36px;
     }
@@ -79,7 +79,7 @@
     text-align: center;
 }
 
-.plug__picture-bg-wrapper {
+.plug__wing {
     position: absolute;
     left: 0;
     right: 0;
@@ -87,17 +87,45 @@
     height: 100%;
 }
 
-.plug__picture-bg-img {
+.plug__wing-left {
     position: absolute;
-    top: -62%;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    right: 50%;
+    height: 100%;
+}
+
+.plug__wing-left-picture-img {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
     width: auto;
     height: auto;
+    animation: wing-left .4s .8s both;
 
-    @media (max-width: $laptop) {
-        top: -35%;
-        width: 140%;
+    @media (max-width: $tablet) {
+        bottom: 40%;
+        width: 150%;
+    }
+}
+
+.plug__wing-right {
+    position: absolute;
+    left: 50%;
+    right: 0;
+    height: 100%;
+}
+
+.plug__wing-right-picture-img {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: auto;
+    height: auto;
+    animation: wing-right .4s .8s both;
+
+    @media (max-width: $tablet) {
+        bottom: 40%;
+        width: 150%;
     }
 }
 
@@ -113,7 +141,11 @@
     transform: translateX(15px);
 
     @media (max-width: $laptop) {
-        width: 50%;
+        width: 40%;
+    }
+
+    @media (max-width: $tablet) {
+        transform: unset;
     }
 }
 
@@ -133,5 +165,27 @@
         background-image:
             radial-gradient(circle at left top, #192630, transparent 50%),
             radial-gradient(circle at right bottom, #211427, transparent 65%);
+    }
+}
+
+@keyframes wing-left {
+    from {
+        transform: rotate(-60deg) translateY(30%);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes wing-right {
+    from {
+        transform: rotate(60deg) translateY(30%);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0) translateY(0);
+        opacity: 1;
     }
 }
