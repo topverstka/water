@@ -1,0 +1,43 @@
+.has-water {
+    margin-top: 505px;
+}
+
+.has-water__inner {
+    position: relative;
+    margin-left: auto;
+    width: 50%;
+}
+
+.has-water__img {
+    grid-row: 1 / 3;
+}
+
+.has-water__title {
+    margin-right: -90px;
+    margin-bottom: 55px;
+    font-size: 72px;
+    line-height: 62px;
+    text-transform: uppercase;
+}
+
+.has-water__desc {
+    color: $gray;
+    font-size: 20px;
+    line-height: 53px;
+}
+
+.has-water__more {
+    margin-top: 40px;
+}
+
+.has-water__img {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translate(-140px, -42%);
+}
+
+.has-water__picture-img {
+    width: auto;
+    height: auto;
+}

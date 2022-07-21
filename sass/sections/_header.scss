@@ -1,8 +1,59 @@
 .header {
     display: flex;
-    padding: 46px 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 46px 85px;
+    padding-right: 70px;
+}
+
+.header__burger {
+    display: inline-flex;
+    align-items: center;
+    color: $white;
+    font-size: 20px;
+    letter-spacing: .24em;
+    font-family: $ffHeader;
+    font-weight: 300;
+}
+
+.header__burger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 35px;
+    width: 47px;
+    height: 27px;
+
+    .header__burger-line,
+    &::before,
+    &::after {
+        height: 2px;
+        background: $white;
+        opacity: .14;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        width: 47px;
+        
+    }
+
+    .header__burger-line {
+        width: 37px;
+    }
 }
 
 .header__logo {
     margin: 0 auto;
+    transform: translateX(-95%);
+}
+
+.header__lang {
+    padding: 20px 16px;
+    color: $white;
+    font-size: 11px;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    border: 1px solid $gray;
 }

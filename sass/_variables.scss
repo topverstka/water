@@ -1,6 +1,6 @@
 // Пользовательские переменные
 :root {
-    --ffMain: 'RF Dewi Expanded', sans-serif;
+    --ffMain: 'Roboto', sans-serif;
     --ffHeader: 'RF Dewi Expanded', sans-serif;
     --tr: .3s;  // Плавность перехода
     --radius: 16px; // border-radius
@@ -23,6 +23,8 @@ $mobile-s: 319px;
 
 // Цвета
 :root {
+    --white: #fff;
+    --gray: rgba(255, 255, 255, .5);
     --main: #a8a5aa;
     --second: #747474;
     --accent: #399478;
@@ -36,6 +38,8 @@ $mobile-s: 319px;
     --error: #E83D3D;
 }
 
+$white: var(--white);
+$gray: var(--gray);
 $main: var(--main);
 $second: var(--second);
 $accent: var(--accent);
