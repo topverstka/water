@@ -13,105 +13,48 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
-			<button class="header__burger" type="button">
-				<span class="header__burger-icon">
-					<span class="header__burger-line"></span>
-				</span>
-				MENU
-			</button>
-
-			<a class="header__logo logo" href="/">
-				<img class="logo__img" src="img/logo.png" alt="HAS">
-			</a>
-
-			<button class="header__lang" type="button">en</button>
-		</header>
-
 		<main>
-			<section class="hero">
-				<div class="hero__scroll-down">
-					<div class="scroll-down">
-						<div class="scroll-down__mouse">
-							<div class="scroll-down__wheel"></div>
-						</div>
-						<p class="scroll-down__desc">SCROLL DOWN</p>
+			<section class="plug">
+				<div class="plug__content container">
+					<div class="plug__logo logo" data-aos="fade-down">
+						<img class="logo__img" src="img/logo.png" alt="HAS" width="69" height="63">
 					</div>
+
+					<p class="plug__subtitle" data-aos="fade-down" data-aos-delay="100">WEBSITE IS UNDER</p>
+					<h1 class="plug__title" data-aos="fade-down" data-aos-delay="400" data-aos-duration="600">CONSTRUCTION</h1>
 				</div>
 
-				<div class="container">
-					<div class="hero__content">
-						<p class="hero__subtitle title">UNIQUE IN PROPERTIES</p>
-						<h1 class="hero__title title">WATER</h1>
-					</div>
-
-					<div class="hero__img">
-						<div class="hero__wing">
-							<div class="hero__wing-left">
-								<picture class="hero__wing-left-picture">
-									<!-- <source srcset="img/plug/wing-left.webp" type="image/webp"> -->
-									<img class="hero__wing-left-picture-img" src="img/hero/wing-left.png" alt="water">
-								</picture>
-							</div>
-							<div class="hero__wing-right">
-								<picture class="hero__wing-right-picture">
-									<!-- <source srcset="img/plug/wing-right.webp" type="image/webp"> -->
-									<img class="hero__wing-right-picture-img" src="img/hero/wing-right.png" alt="water">
-								</picture>
-							</div>
+				<div class="plug__pictures" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1000" data-aos-offset="0">
+					<div class="plug__wing">
+						<div class="plug__wing-left">
+							<picture class="plug__wing-left-picture">
+								<source srcset="img/plug/wing-left.webp" type="image/webp">
+								<img class="plug__wing-left-picture-img" src="img/plug/wing-left.png" alt="water">
+							</picture>
 						</div>
-						<picture class="hero__picture">
-							<!-- <source srcset="img/hero/hero.webp" type="image/webp"> -->
-							<img class="hero__picture-img" src="img/hero/hero.png" alt="water">
-						</picture>
+						<div class="plug__wing-right">
+							<picture class="plug__wing-right-picture">
+								<source srcset="img/plug/wing-right.webp" type="image/webp">
+								<img class="plug__wing-right-picture-img" src="img/plug/wing-right.png" alt="water">
+							</picture>
+						</div>
 					</div>
+					<picture class="plug__picture">
+						<source srcset="img/plug/plug-mobile.webp" media="(max-width: 767px)" type="image/webp">
+						<source srcset="img/plug/plug-mobile.png" media="(max-width: 767px)">
+						<source srcset="img/plug/plug.webp" type="image/webp">
+						<img class="plug__picture-img" src="img/plug/plug.png" alt="water">
+					</picture>
 				</div>
 
-				<ul class="hero__social social">
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<img class="social__icon" src="img/icons/fb.png" alt="facebook" width="11" height="21">
-						</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<img class="social__icon" src="img/icons/tw.png" alt="twitter" width="24" height="20">
-						</a>
-					</li>
-					<li class="social__item">
-						<a class="social__link" href="#">
-							<img class="social__icon" src="img/icons/yt.png" alt="youtube" width="23" height="17">
-						</a>
-					</li>
-				</ul>
-			</section>
-
-			<section class="has-water">
-				<div class="container">
-					<div class="has-water__inner">
-						<div class="has-water__top">
-							<div class="has-water__img">
-								<picture class="has-water__picture">
-									<!-- <source srcset="img/hero/hero.webp" type="image/webp"> -->
-									<img class="has-water__picture-img" src="img/has-water.png" alt="water">
-								</picture>
-							</div>
-		
-							<h2 class="has-water__title title">has water</h2>
-						</div>
-	
-						<div class="has-water__bottom">
-							<p class="has-water__desc">Feel the effect of highly alkaline water, enriched withmolecular hydrogen. Our water undergoes reverse osmosis filtration, mini- lysis and electrolysis. With HAS Water, rest and recovery comes to a whole new level.</p>
-							<a class="has-water__more btn btn_primary" href="">LEARN MORE</a>
-						</div>
-					</div>
-				</div>
+				<div class="plug__bg"></div>
 			</section>
 		</main>
 	</div>
 
 	<!-- Подключение скриптов -->
-
+	<script src="./js/libs/aos.js"></script>
+	<script>AOS.init();</script>
 </body>
 
 </html>
