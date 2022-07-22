@@ -19,6 +19,10 @@
 .hero__title {
     font-size: 204px;
     line-height: 180px;
+
+    @media (max-width: $laptop-l) {
+        font-size: 174px;
+    }
 }
 
 .hero__img {
@@ -70,6 +74,10 @@
     position: sticky;
     top: 850px;
     left: 90px;
+
+    @media (max-width: $laptop-l) {
+        display: none;
+    }
 }
 
 .hero__social {

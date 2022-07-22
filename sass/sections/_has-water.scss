@@ -18,6 +18,10 @@
     font-size: 72px;
     line-height: 62px;
     text-transform: uppercase;
+
+    @media (max-width: $laptop-xl) {
+        margin-right: 0;
+    }
 }
 
 .has-water__desc {

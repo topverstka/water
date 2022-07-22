@@ -4,6 +4,10 @@
     align-items: center;
     padding: 46px 85px;
     padding-right: 70px;
+
+    @media (max-width: $laptop-l) {
+        padding: 46px;
+    }
 }
 
 .header__burger {
