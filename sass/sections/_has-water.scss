@@ -1,15 +1,42 @@
 .has-water {
-    margin-top: 505px;
+    padding-top: 505px;
+    padding-bottom: 30%;
+
+    @media (max-width: $laptop-l) {
+        padding-top: 255px;
+    }
+
+    @media (max-width: $laptop) {
+        padding-top: 155px;
+    }
+
+    @media (max-width: $tablet) {
+        padding-top: 80px;
+    }
 }
 
 .has-water__inner {
     position: relative;
     margin-left: auto;
     width: 50%;
+
+    @media (max-width: $laptop) {
+        width: 100%;
+    }
 }
 
-.has-water__img {
-    grid-row: 1 / 3;
+.has-water__top {
+    @media (max-width: $laptop) {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 80px;
+    }
+
+    @media (max-width: $mobile-l) {
+        grid-template-columns: 1.3fr 1fr;
+        gap: 30px;
+    }
 }
 
 .has-water__title {
@@ -22,26 +49,80 @@
     @media (max-width: $laptop-xl) {
         margin-right: 0;
     }
+
+    @media (max-width: $laptop) {
+        font-size: vw(100);
+    }
+
+    @media (max-width: $tablet) {
+        margin: 0;
+    }
+
+    @media (max-width: $mobile-l) {
+        font-size: 23px;
+        line-height: 35px;
+    }
+}
+
+.has-water__picture-img {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    z-index: -1;
+    width: vw(542);
+    height: auto;
+    transform: translate(-140px, -47%);
+
+    @media (max-width: $laptop) {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        width: auto;
+        max-width: 100%;
+        transform: unset;
+    }
+}
+
+.has-water__bottom {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (max-width: $tablet) {
+        margin-top: -25px;
+    }
 }
 
 .has-water__desc {
     color: $gray;
     font-size: 20px;
     line-height: 53px;
+
+    @media (max-width: $tablet) {
+        text-align: center;
+        font-size: 16px;
+        line-height: 27px;
+    }
+
+    @media (max-width: $mobile-l) {
+        text-align: center;
+        font-size: 11px;
+        line-height: 27px;
+    }
 }
 
 .has-water__more {
     margin-top: 40px;
-}
+    width: 100%;
+    max-width: 366px;
 
-.has-water__img {
-    position: absolute;
-    top: 50%;
-    right: 100%;
-    transform: translate(-140px, -42%);
-}
+    @media (max-width: $laptop) {
+        align-self: center;
+    }
 
-.has-water__picture-img {
-    width: auto;
-    height: auto;
+    @media (max-width: $tablet) {
+        max-width: 195px;
+        margin-top: 26px;
+    }
 }

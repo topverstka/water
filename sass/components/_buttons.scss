@@ -29,11 +29,18 @@ $btn-second-disabled: var(--btn-second-disabled);
 // Основной шаблон кнопки
 .btn {
     display: inline-flex;
-    padding: 27px 110px;
+    justify-content: center;
+    align-items: center;
+    padding: 27px;
     font-size: 17px;
     letter-spacing: .26em;
     text-transform: uppercase;
     transition: $tr;
+
+    @media (max-width: $tablet) {
+        padding: 17px;
+        font-size: 11px;
+    }
 }
 
 // Акцентная кнопка
@@ -41,16 +48,6 @@ $btn-second-disabled: var(--btn-second-disabled);
     color: black;
     background: $white;
 
-    // &:hover {
-        
-    //     @media (min-width: $minHover) {
-    //         box-shadow: 0px 5px 20px rgba(70, 126, 243, 0.5);
-    //     }
-    // }
-
-    // &:active {
-    //     background: $btn-primary-pressed;
-    // }
 }
 
 // Второстепенная кнопка

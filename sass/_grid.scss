@@ -4,8 +4,12 @@
     padding: 0 16px;
     margin: 0 auto;
 
-    @media (max-width: $mobile-l) {
-        padding: 0 16px;
+    @media (max-width: $laptop-m) {
+        max-width: 960px;
+    }
+
+    @media (max-width: $laptop) {
+        max-width: 720px;
     }
 }
 
