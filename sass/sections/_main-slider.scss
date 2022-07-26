@@ -1,5 +1,10 @@
 .main-slider {
+    overflow: hidden;
+    height: 931px;
 
+    @media (max-width: $tablet) {
+        height: auto;
+    }
 }
 
 .main-slider__item {
@@ -85,6 +90,7 @@
     top: 50%;
     right: 130px;
     z-index: 1;
+    transform: translateY(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;

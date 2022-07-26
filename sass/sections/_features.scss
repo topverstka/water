@@ -1,0 +1,119 @@
+.features {
+    position: relative;
+    padding-top: 220px;
+    padding-bottom: 220px;
+    background-image: 
+        url(../img/features/bubble-left.png),
+        url(../img/features/bubble-right.png);
+    background-repeat: no-repeat;
+    background-position: left bottom 525px, right bottom 185px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at left top, #211427, transparent 50%),
+            radial-gradient(circle at right bottom, #192630, transparent 50%);
+    }
+
+    @media (max-width: $tablet) {
+        padding-top: 64px;
+        padding-bottom: 64px;
+        background-image: 
+            url(../img/features/bubble-mobile-left.png)
+            url(../img/features/bubble-mobile-right.png);
+        background-position: left top -400px, right bottom;
+    }
+}
+
+.features__inner {
+    position: relative;
+}
+
+.features__title {
+    margin-bottom: 48px;
+    font-family: $ffHeader;
+    font-size: 51px;
+    line-height: 45px;
+    text-align: center;
+
+    @media (max-width: $tablet) {
+        margin-bottom: 24px;
+        font-size: 24px;
+        line-height: 36px;
+    }
+}
+
+.features__desc {
+    margin: 0 auto;
+    max-width: 590px;
+    font-size: 22px;
+    line-height: 41px;
+    text-align: center;
+    opacity: .46;
+
+    @media (max-width: $tablet) {
+        font-size: 11px;
+        line-height: 21px;
+    }
+}
+
+.features__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-items: start;
+    gap: 120px 105px;
+    margin-top: 96px;
+    background-image: linear-gradient(125deg, #d8d8d9, #a8a5aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    list-style-type: none;
+    counter-reset: features;
+
+    @media (max-width: $tablet) {
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 40px;
+    }
+}
+
+.features__item {
+    display: grid;
+    justify-items: center;
+    gap: 40px;
+    color: transparent;
+    text-align: center;
+    font-size: 18px;
+    line-height: 41px;
+    counter-increment: features;
+
+    &::before {
+        content: counter(features);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 138px;
+        height: 138px;
+        color: $white;
+        font-family: $ffHeader;
+        font-size: 72px;
+        line-height: 81px;
+        border: 2px solid $white;
+    }
+
+    @media (max-width: $tablet) {
+        gap: 20px;
+        font-size: 11px;
+        line-height: 24px;
+
+        &::before {
+            width: 82px;
+            height: 82px;
+            font-size: 42px;
+        }
+    }
+}
