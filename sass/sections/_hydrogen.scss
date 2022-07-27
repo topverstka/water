@@ -1,0 +1,93 @@
+.hydrogen {
+    position: relative;
+    padding-top: 265px;
+    padding-bottom: 355px;
+
+    background-image: url(../img/hydrogen/hydrogen.png);
+    background-repeat: no-repeat;
+    background-position: right bottom 122px;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at left bottom, #211427, transparent 50%),
+            radial-gradient(circle at right center, #080b09, transparent 50%);
+    }
+
+    @media (max-width: $laptop-xl) {
+        background-position: right -200px bottom 35px;
+    }
+
+    @media (max-width: $laptop-l) {
+        background-position: right -500px bottom 190px;
+    }
+
+    @media (max-width: $laptop) {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url(../img/hydrogen/hydrogen-mobile.png);
+        background-position: right bottom -120px;
+    }
+
+    @media (max-width: $tablet) {
+        padding-top: 58px;
+    }
+}
+
+.hydrogen__content {
+    position: relative;
+    z-index: 1;
+    max-width: 645px;
+
+    @media (max-width: $laptop) {
+        max-width: unset;
+    }
+}
+
+.hydrogen__title {
+    margin-bottom: 32px;
+    font-family: $ffHeader;
+    font-weight: 600;
+    font-size: 86px;
+    line-height: 135px;
+
+    @media (max-width: $laptop) {
+        font-size: 62px;
+        line-height: 85px;
+    }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 16px;
+        font-size: 39px;
+        line-height: 62px;
+    }
+}
+
+.hydrogen__title-mark {
+    display: block;
+    color: #292929;
+}
+
+.hydrogen__paragraph {
+    font-size: 21px;
+    line-height: 51px;
+    opacity: .5;
+
+    & + & {
+        margin-top: 52px;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 10px;
+        line-height: 23px;
+
+        & + & {
+            margin-top: 22px;
+        }
+    }
+}
