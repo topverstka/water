@@ -158,7 +158,12 @@
         height: 13px;
         background: $white;
         opacity: .68;
+        transition: opacity .2s;
         cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+        }
 
         & + .swiper-pagination-bullet {
             margin-top: 28px;

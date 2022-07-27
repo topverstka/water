@@ -25,6 +25,12 @@
     font-family: $ffHeader;
     font-weight: 300;
 
+    &:hover {
+        .header__burger-icon {
+            opacity: 1;
+        }
+    }
+
     @media (max-width: $laptop) {
         font-size: 0;
     }
@@ -37,13 +43,14 @@
     margin-right: 35px;
     width: 47px;
     height: 27px;
+    opacity: .14;
+    transition: opacity .2s;
 
     .header__burger-line,
     &::before,
     &::after {
         height: 2px;
         background: $white;
-        opacity: .14;
     }
 
     &::before,
@@ -92,6 +99,10 @@
     letter-spacing: .3em;
     text-transform: uppercase;
     border: 1px solid $gray;
+
+    &:hover {
+        opacity: .61;
+    }
 
     @media (max-width: $laptop) {
         border: none;

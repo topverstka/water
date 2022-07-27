@@ -37,6 +37,10 @@ $btn-second-disabled: var(--btn-second-disabled);
     text-transform: uppercase;
     transition: $tr;
 
+    &:hover {
+        opacity: .61;
+    }
+
     @media (max-width: $tablet) {
         padding: 17px;
         font-size: 11px;
