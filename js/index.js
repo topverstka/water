@@ -6,11 +6,11 @@ const swiper = new Swiper('.main-slider', {
     //     delay: 5000,
     // },
 
-    // breakpoints: {
-    //   768: {
-    //     direction: 'vertical',
-    //   }
-    // },
+    breakpoints: {
+      768: {
+        direction: 'vertical',
+      }
+    },
   
     pagination: {
       el: '.main-slider__pagination',

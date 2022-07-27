@@ -1,10 +1,14 @@
 .main-slider {
     overflow: hidden;
-    // height: 931px;
+    height: 931px;
 
-    // @media (max-width: $tablet) {
-    //     height: auto;
-    // }
+    @media (max-width: $laptop) {
+        height: 630px;
+    }
+
+    @media (max-width: $tablet) {
+        height: auto;
+    }
 }
 
 .main-slider__item {
