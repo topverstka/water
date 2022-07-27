@@ -100,14 +100,16 @@
     font-size: 20px;
     line-height: 53px;
 
-    @media (max-width: $tablet) {
+    @media (max-width: $laptop) {
         text-align: center;
+    }
+
+    @media (max-width: $tablet) {
         font-size: 16px;
         line-height: 27px;
     }
 
     @media (max-width: $mobile-l) {
-        text-align: center;
         font-size: 11px;
         line-height: 27px;
     }
