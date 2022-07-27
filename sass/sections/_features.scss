@@ -20,6 +20,11 @@
             radial-gradient(circle at right bottom, #192630, transparent 50%);
     }
 
+    @media (max-width: $laptop) {
+        padding-top: 124px;
+        padding-bottom: 124px;
+    }
+
     @media (max-width: $tablet) {
         padding-top: 64px;
         padding-bottom: 64px;
