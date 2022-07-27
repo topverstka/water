@@ -3,10 +3,6 @@
     height: 931px;
 
     @media (max-width: $laptop) {
-        height: 630px;
-    }
-
-    @media (max-width: $tablet) {
         height: auto;
     }
 }

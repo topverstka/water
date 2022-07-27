@@ -7,7 +7,7 @@ const swiper = new Swiper('.main-slider', {
     // },
 
     breakpoints: {
-      768: {
+      1024: {
         direction: 'vertical',
       }
     },
