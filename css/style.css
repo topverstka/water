@@ -1425,7 +1425,7 @@ body._lock {
   .features {
     padding-top: 64px;
     padding-bottom: 64px;
-    background-image: url(../img/features/bubble-mobile-left.png) url(../img/features/bubble-mobile-right.png);
+    background-image: url(../img/features/bubble-mobile-left.png), url(../img/features/bubble-mobile-right.png);
     background-position: left top -400px, right bottom;
   }
 }
