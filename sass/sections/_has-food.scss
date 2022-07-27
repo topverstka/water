@@ -1,0 +1,115 @@
+.has-food {
+    position: relative;
+    padding-top: 150px;
+    padding-bottom: 290px;
+
+    @media (max-width: $tablet) {
+        padding: 0;
+    }
+}
+
+.has-food__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: radial-gradient(circle at right center, transparent 15%, #000000);
+        opacity: .8;
+    }
+
+    @media (max-width: $laptop) {
+        &::before {
+            background: #000000;
+            opacity: .6;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        position: static;
+
+        &::before {
+            content: unset;
+        }
+    }
+}
+
+.has-food__bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @media (max-width: $tablet) {
+        min-height: 386px;
+        object-position: right;
+    }
+}
+
+.has-food__content {
+    position: relative;
+    max-width: 680px;
+
+    @media (max-width: $laptop) {
+        max-width: unset;
+    }
+
+    @media (max-width: $tablet) {
+        padding-top: 30px;
+        padding-bottom: 82px;
+        text-align: center;
+    }
+}
+
+.has-food__content-bg {
+    @media (max-width: $tablet) {
+        background-image: 
+            radial-gradient(circle at left top, #192630, transparent 50%),
+            radial-gradient(circle at right center, #211427, transparent 50%),
+            radial-gradient(circle at left bottom, #211427, transparent 50%),
+            radial-gradient(circle at right bottom, #192630, transparent 50%);
+    }
+}
+
+.has-food__title {
+    margin-bottom: 22px;
+    font-family: $ffHeader;
+    color: $white;
+    font-size: 107px;
+    line-height: 166px;
+
+    @media (max-width: $tablet) {
+        font-size: 46px;
+        line-height: 72px;
+    }
+}
+
+.has-food__desc {
+    column-count: 2;
+    column-gap: 90px;
+
+    @media (max-width: $tablet) {
+        columns: unset;
+    }
+}
+
+.has-food__paragraph {
+    font-size: 16px;
+    line-height: 30px;
+
+    & + & {
+        margin-top: 32px;
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 15px;
+        line-height: 29px;
+    }
+}

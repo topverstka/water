@@ -9,6 +9,7 @@
     }
 }
 
+@include font('RF Dewi Expanded', normal, 700, '../fonts/RFDewi/RFDewiExpanded-Bold.woff2');
 @include font('RF Dewi Expanded', normal, 600, '../fonts/RFDewi/RFDewiExpanded-Semibold.woff2');
 @include font('RF Dewi Expanded', normal, 400, '../fonts/RFDewi/RFDewiExpanded-Regular.woff2');
 @include font('RF Dewi Expanded', normal, 300, '../fonts/RFDewi/RFDewiExpanded-Light.woff2');

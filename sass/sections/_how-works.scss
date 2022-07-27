@@ -1,10 +1,40 @@
 .how-works {
+    position: relative;
     padding-top: 164px;
     padding-bottom: 270px;
 
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image:
+            radial-gradient(circle at left center, #192630, transparent 50%),
+            radial-gradient(circle at right bottom, #211427, transparent 50%);
+    }
+
+    @media (max-width: $laptop) {
+        &::before {
+            background-image:
+                radial-gradient(circle at left top, #192630, transparent 20%),
+                radial-gradient(circle at right center, #211427, transparent 20%),
+                radial-gradient(circle at left bottom, #192630, transparent 20%),
+                radial-gradient(circle at right bottom, #211427, transparent 20%);
+        }
+    }
+
     @media (max-width: $tablet) {
         padding-top: 62px;
+        padding-bottom: 120px;
     }
+}
+
+.how-works__content {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
 }
 
 .how-works__title {
@@ -18,7 +48,7 @@
 
     @media (max-width: $tablet) {
         margin-bottom: 28px;
-        font-size: 28px;
+        font-size: 27px;
         line-height: 64px;
     }
 }
@@ -28,7 +58,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-right: -32px;
-    margin-bottom: -32px;
+    margin-bottom: -48px;
     list-style-type: none;
 
     @media (max-width: $tablet) {
@@ -39,7 +69,7 @@
 .how-works__item {
     position: relative;
     margin-right: 32px;
-    margin-bottom: 32px;
+    margin-bottom: 48px;
     padding: 256px 5px 20px 37px;
     width: calc(33.33333% - 32px);
     max-width: 380px;
@@ -52,7 +82,9 @@
     @media (max-width: $tablet) {
         margin-right: 0;
         margin-left: auto;
+        padding: 209px 5px 20px 27px;
         width: 100%;
+        min-height: 480px;
 
         &:nth-child(odd) {
             margin-right: auto;
@@ -96,10 +128,20 @@
     font-family: $ffHeader;
     font-weight: 300;
     font-size: 88px;
+
+    @media (max-width: $tablet) {
+        font-size: 71px;
+        line-height: 100px;
+    }
 }
 
 .how-works__item-desc {
     font-size: 14px;
     line-height: 36px;
     opacity: .79;
+
+    @media (max-width: $tablet) {
+        font-size: 11px;
+        line-height: 28px;
+    }
 }
