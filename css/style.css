@@ -1035,6 +1035,7 @@ body._lock {
 @media (max-width: 767px) {
   .has-water {
     padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -1164,6 +1165,12 @@ body._lock {
 
 .main-slider {
   overflow: hidden;
+  height: 931px;
+}
+@media (max-width: 1023px) {
+  .main-slider {
+    height: auto;
+  }
 }
 
 .main-slider__item {
@@ -1369,6 +1376,12 @@ body._lock {
   width: 100%;
   height: 100%;
   background-image: radial-gradient(circle at left top, #211427, transparent 50%), radial-gradient(circle at right bottom, #192630, transparent 50%);
+}
+@media (max-width: 1023px) {
+  .features {
+    padding-top: 124px;
+    padding-bottom: 124px;
+  }
 }
 @media (max-width: 767px) {
   .features {
