@@ -85,6 +85,7 @@
         margin-bottom: -40px;
         margin-right: -40px;
         margin-top: 40px;
+        background: none;
     }
 }
 
@@ -128,13 +129,35 @@
         gap: 20px;
         padding-right: 40px;
         padding-bottom: 40px;
+        color: $white;
         font-size: 11px;
         line-height: 24px;
+        opacity: .46;
 
         &::before {
             width: 82px;
             height: 82px;
             font-size: 42px;
         }
+    }
+}
+
+.features__item-desc {
+    margin: 0 -30px;
+
+    @media (max-width: $laptop-l) {
+        margin: 0;
+    }
+
+    @media (max-width: $tablet) {
+        margin: 0 -30px 0 -10px;
+    }
+}
+
+.features__item-desc_last {
+    margin: 0;
+
+    @media (max-width: $tablet) {
+        margin: 0 -25px 0 -15px;
     }
 }
