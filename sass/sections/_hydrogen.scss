@@ -15,12 +15,12 @@
             radial-gradient(circle at left bottom, #211427, transparent 50%),
             radial-gradient(circle at right center, #080b09, transparent 50%);
         background-repeat: no-repeat;
-        background-position: right bottom 122px, center;
+        background-position: right bottom 122px, center, center;
     }
 
     @media (max-width: $laptop-xl) {
         &::before {
-            background-position: right -200px bottom 35px, center;
+            background-position: right -200px bottom 35px, center, center;
         }
     }
 
@@ -37,9 +37,10 @@
         &::before {
             background-image: 
                 url(../img/hydrogen/hydrogen-mobile.png),
-                radial-gradient(circle at left bottom, #211427, transparent 50%),
-                radial-gradient(circle at right center, #080b09, transparent 50%);
-            background-position: right bottom -120px, center;
+                radial-gradient(circle at left bottom, #211427, transparent 80%),
+                radial-gradient(circle at right top, #211427, transparent 20%),
+                radial-gradient(circle at right bottom, #080b09, transparent 20%);
+            background-position: right bottom -120px, center, center, center;
         }
     }
 
