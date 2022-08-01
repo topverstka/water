@@ -2035,13 +2035,22 @@ body._lock {
 }
 
 .main-final {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
   min-height: 924px;
-  background-image: url(../img/main-final.jpg);
+}
+.main-final::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/main-final/main-final-text-bg.png);
   background-size: cover;
 }
 @media (max-width: 767px) {
