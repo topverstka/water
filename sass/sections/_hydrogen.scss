@@ -3,10 +3,6 @@
     padding-top: 265px;
     padding-bottom: 355px;
 
-    background-image: url(../img/hydrogen/hydrogen.png);
-    background-repeat: no-repeat;
-    background-position: right bottom 122px;
-
     &::before {
         content: '';
         position: absolute;
@@ -15,23 +11,36 @@
         width: 100%;
         height: 100%;
         background-image: 
+            url(../img/hydrogen/hydrogen.png),
             radial-gradient(circle at left bottom, #211427, transparent 50%),
             radial-gradient(circle at right center, #080b09, transparent 50%);
+        background-repeat: no-repeat;
+        background-position: right bottom 122px, center;
     }
 
     @media (max-width: $laptop-xl) {
-        background-position: right -200px bottom 35px;
+        &::before {
+            background-position: right -200px bottom 35px, center;
+        }
     }
 
     @media (max-width: $laptop-l) {
-        background-position: right -500px bottom 190px;
+        &::before {
+            background-position: right -500px bottom 190px, center;
+        }
     }
 
     @media (max-width: $laptop) {
         padding-top: 100px;
         padding-bottom: 100px;
-        background-image: url(../img/hydrogen/hydrogen-mobile.png);
-        background-position: right bottom -120px;
+
+        &::before {
+            background-image: 
+                url(../img/hydrogen/hydrogen-mobile.png),
+                radial-gradient(circle at left bottom, #211427, transparent 50%),
+                radial-gradient(circle at right center, #080b09, transparent 50%);
+            background-position: right bottom -120px, center;
+        }
     }
 
     @media (max-width: $tablet) {
