@@ -1572,9 +1572,6 @@ body._lock {
   position: relative;
   padding-top: 265px;
   padding-bottom: 355px;
-  background-image: url(../img/hydrogen/hydrogen.png);
-  background-repeat: no-repeat;
-  background-position: right bottom 122px;
 }
 .hydrogen::before {
   content: "";
@@ -1583,24 +1580,28 @@ body._lock {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(circle at left bottom, #211427, transparent 50%), radial-gradient(circle at right center, #080b09, transparent 50%);
+  background-image: url(../img/hydrogen/hydrogen.png), radial-gradient(circle at left bottom, #211427, transparent 50%), radial-gradient(circle at right center, #080b09, transparent 50%);
+  background-repeat: no-repeat;
+  background-position: right bottom 122px, center, center;
 }
 @media (max-width: 1919px) {
-  .hydrogen {
-    background-position: right -200px bottom 35px;
+  .hydrogen::before {
+    background-position: right -200px bottom 35px, center, center;
   }
 }
 @media (max-width: 1439px) {
-  .hydrogen {
-    background-position: right -500px bottom 190px;
+  .hydrogen::before {
+    background-position: right -500px bottom 190px, center;
   }
 }
 @media (max-width: 1023px) {
   .hydrogen {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: url(../img/hydrogen/hydrogen-mobile.png);
-    background-position: right bottom -120px;
+  }
+  .hydrogen::before {
+    background-image: url(../img/hydrogen/hydrogen-mobile.png), radial-gradient(circle at left bottom, #211427, transparent 80%), radial-gradient(circle at right top, #211427, transparent 20%), radial-gradient(circle at right bottom, #080b09, transparent 20%);
+    background-position: right bottom -120px, center, center, center;
   }
 }
 @media (max-width: 767px) {
@@ -1839,7 +1840,7 @@ body._lock {
   position: relative;
   margin-right: 32px;
   margin-bottom: 48px;
-  padding: 256px 5px 20px 37px;
+  padding: 256px 5px 20px 30px;
   width: calc(33.33333% - 32px);
   max-width: 380px;
   min-height: 590px;
@@ -1898,6 +1899,7 @@ body._lock {
   font-family: var(--ffHeader);
   font-weight: 300;
   font-size: 88px;
+  line-height: 119px;
 }
 @media (max-width: 767px) {
   .how-works__item-title {
@@ -1975,7 +1977,7 @@ body._lock {
 
 .has-food__content {
   position: relative;
-  max-width: 680px;
+  max-width: 685px;
 }
 @media (max-width: 1023px) {
   .has-food__content {
